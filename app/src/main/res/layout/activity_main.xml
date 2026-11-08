@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <!-- 1. IMAGEN (Icono del sistema para evitar errores) -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:src="@android:drawable/ic_dialog_info" />
+
+    <!-- 2. CUADRO DE TEXTO -->
+    <EditText
+        android:id="@+id/etInputNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Introduce un número entero positivo"
+        android:inputType="number" />
+
+    <!-- 3. BOTÓN -->
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Calcular Números Primos" />
+
+    <!-- 4. ETIQUETA / RESULTADO -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="Introduce un número para comenzar"
+        android:textSize="16sp" />
+
+</LinearLayout>
